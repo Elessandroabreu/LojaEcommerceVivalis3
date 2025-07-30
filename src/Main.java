@@ -115,7 +115,7 @@ public class Main {
                 }
             } else if (opcao == 5) {
                 if (carrinho.size() == 0) {
-                    System.out.println("Carrinho vazio!");
+                    System.out.println("Seu carrinho está vazio!");
                 } else {
                     double total = 0;
                     for (int i = 0; i < carrinho.size(); i++) {
