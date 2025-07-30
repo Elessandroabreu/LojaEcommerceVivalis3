@@ -9,7 +9,7 @@ public class Main {
         HashMap<String, Cliente> clientes = new HashMap<>();
         ArrayList<Produto> carrinho = new ArrayList<>();
 
-        // Cadastrando produtos
+
         produtos.add(new Produto("Shampoo Hidratante", "Shampoo", 15.90));
         produtos.add(new Produto("Shampoo Anti-Caspa", "Shampoo", 18.50));
         produtos.add(new Produto("Sabonete Líquido Lavanda", "Sabonete", 12.30));
@@ -21,10 +21,10 @@ public class Main {
         produtos.add(new Produto("Sabonete Natural Mel", "Sabonete", 14.50));
         produtos.add(new Produto("Difusor Aromático Relaxante", "Difusor Aromático", 28.90));
 
-        System.out.println("\n()()() BEM-VINDO A LOJA VIVELIS ()()()\n");
+        System.out.println("\n()()()--- BEM-VINDO A LOJA VIVELIS ---()()()\n");
 
 
-        System.out.print("Digite seu CPF: ");
+        System.out.print("Digite seu CPF, por favor: ");
         String cpf = sc.nextLine();
 
         Cliente cliente = clientes.get(cpf);
@@ -169,12 +169,12 @@ public class Main {
             }
             else if (opcao == 6) {
                 System.out.println("\n=== SUPORTE ===");
-                System.out.println("Horário: 8h às 18h");
+                System.out.println("Atendimento: 8h às 18h");
                 System.out.println("Email: suportevivelis@vivelis.com");
-                System.out.println("WhatsApp: (48) 99655-3129");
+                System.out.println("Nosso WhatsApp: (48) 99655-3129");
             }
             else if (opcao == 7) {
-                System.out.println("Obrigado por visitar a Vivelis, Volte sempre!");
+                System.out.println("Obrigado por visitar a Vivelis. Volte sempre!");
                 break;
             }
             else {
