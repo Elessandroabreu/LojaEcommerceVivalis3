@@ -21,7 +21,7 @@ public class Main {
         produtos.add(new Produto("Sabonete Natural Mel", "Sabonete", 14.50));
         produtos.add(new Produto("Difusor Aromático Relaxante", "Difusor Aromático", 28.90));
 
-        System.out.println("=== BEM-VINDO A LOJA VIVELIS ===");
+        System.out.println("\n()()() BEM-VINDO A LOJA VIVELIS ()()()\n");
 
 
         System.out.print("Digite seu CPF: ");
@@ -35,27 +35,27 @@ public class Main {
 
         int opcao = 1;
         while (opcao != 0) {
-            System.out.println("\n=== MENU ===");
+            System.out.println("\n    *** MENU ***");
             System.out.println("1 - Ver Produtos");
             System.out.println("2 - Filtrar Categoria");
             System.out.println("3 - Adicionar no Carrinho");
             System.out.println("4 - Ver Carrinho");
             System.out.println("5 - Comprar");
             System.out.println("6 - Suporte");
-            System.out.println("0 - Sair");
+            System.out.println("7 - Sair");
             System.out.print("Opção: ");
 
             opcao = sc.nextInt();
             sc.nextLine();
 
             if (opcao == 1) {
-                System.out.println("\n=== PRODUTOS ===");
+                System.out.println("\n*** PRODUTOS ***");
                 for (int i = 0; i < produtos.size(); i++) {
                     System.out.println(i + " - " + produtos.get(i).nome + " | " + produtos.get(i).categoria + " | R$ " + produtos.get(i).preco);
                 }
             }
             else if (opcao == 2) {
-                System.out.println("\n=== CATEGORIAS ===");
+                System.out.println("\n*** CATEGORIAS ***");
                 System.out.println("1 - Perfume");
                 System.out.println("2 - Sabonete");
                 System.out.println("3 - Shampoo");
@@ -78,7 +78,7 @@ public class Main {
                     continue;
                 }
 
-                System.out.println("\n=== PRODUTOS - " + categoria + " ===");
+                System.out.println("\n*** PRODUTOS - " + categoria + " ===");
                 for (int i = 0; i < produtos.size(); i++) {
                     if (produtos.get(i).categoria.equals(categoria)) {
                         System.out.println(i + " - " + produtos.get(i).nome + " | R$ " + produtos.get(i).preco);
@@ -97,7 +97,7 @@ public class Main {
                 }
             }
             else if (opcao == 4) {
-                System.out.println("\n=== CARRINHO ===");
+                System.out.println("\n*** CARRINHO ***");
                 if (carrinho.size() == 0) {
                     System.out.println("Carrinho vazio!");
                 } else {
@@ -173,8 +173,9 @@ public class Main {
                 System.out.println("Email: suportevivelis@vivelis.com");
                 System.out.println("WhatsApp: (48) 99655-3129");
             }
-            else if (opcao == 0) {
-                System.out.println("Obrigado por visitar a Vivelis!");
+            else if (opcao == 7) {
+                System.out.println("Obrigado por visitar a Vivelis, Volte sempre!");
+                break;
             }
             else {
                 System.out.println("Opção inválida!");
