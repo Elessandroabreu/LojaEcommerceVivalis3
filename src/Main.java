@@ -66,13 +66,13 @@ public class Main {
                 String categoria = "";
 
                 if (cat == 1) {
-                    categoria = "Perfume";
+                    categoria = "Perfumes";
                 } else if (cat == 2) {
-                    categoria = "Sabonete";
+                    categoria = "Sabonetes";
                 } else if (cat == 3) {
-                    categoria = "Shampoo";
+                    categoria = "Shampoos";
                 } else if (cat == 4) {
-                    categoria = "Difusor Aromático";
+                    categoria = "Difusor Aromáticos";
                 } else {
                     System.out.println("Categoria inválida!");
                     continue;
