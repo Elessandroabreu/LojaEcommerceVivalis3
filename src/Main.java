@@ -21,7 +21,8 @@ public class Main {
         produtos.add(new Produto("Sabonete Natural Mel", "Sabonete", 14.50));
         produtos.add(new Produto("Difusor Aromático Relaxante", "Difusor Aromático", 28.90));
 
-        System.out.println("=== BEM-VINDO À LOJA VIVELIS ===");
+        System.out.println("=== BEM-VINDO A LOJA VIVELIS ===");
+
 
         System.out.print("Digite seu CPF: ");
         String cpf = sc.nextLine();
