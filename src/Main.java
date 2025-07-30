@@ -72,7 +72,7 @@ public class Main {
                 } else if (cat == 3) {
                     categoria = "Shampoos";
                 } else if (cat == 4) {
-                    categoria = "Difusor Aromáticos";
+                    categoria = "Difusores Aromáticos";
                 } else {
                     System.out.println("Categoria inválida!");
                     continue;
