@@ -10,16 +10,16 @@ public class Main {
         ArrayList<Produto> carrinho = new ArrayList<>();
 
 
-        produtos.add(new Produto("Shampoo Hidratante", "Shampoo", 15.90));
-        produtos.add(new Produto("Shampoo Anti-Caspa", "Shampoo", 18.50));
-        produtos.add(new Produto("Sabonete Líquido Lavanda", "Sabonete", 12.30));
-        produtos.add(new Produto("Difusor Aromático Citrus", "Difusor Aromático", 8.90));
-        produtos.add(new Produto("Sabonete Esfoliante", "Sabonete", 25.00));
-        produtos.add(new Produto("Perfume Floral 100ml", "Perfume", 35.90));
-        produtos.add(new Produto("Shampoo Nutritivo", "Shampoo", 22.70));
-        produtos.add(new Produto("Perfume Masculino 50ml", "Perfume", 89.90));
-        produtos.add(new Produto("Sabonete Natural Mel", "Sabonete", 14.50));
-        produtos.add(new Produto("Difusor Aromático Relaxante", "Difusor Aromático", 28.90));
+        produtos.add(new Produto("Shampoo Hidratante", "Shampoos", 15.90));
+        produtos.add(new Produto("Shampoo Anti-Caspa", "Shampoos", 18.50));
+        produtos.add(new Produto("Sabonete Líquido Lavanda", "Sabonetes", 12.30));
+        produtos.add(new Produto("Difusor Aromático Citrus", "Difusores Aromáticos", 8.90));
+        produtos.add(new Produto("Sabonete Esfoliante", "Sabonetes", 25.00));
+        produtos.add(new Produto("Perfume Floral 100ml", "Perfumes", 35.90));
+        produtos.add(new Produto("Shampoo Nutritivo", "Shampoos", 22.70));
+        produtos.add(new Produto("Perfume Masculino 50ml", "Perfumes", 89.90));
+        produtos.add(new Produto("Sabonete Natural Mel", "Sabonetes", 14.50));
+        produtos.add(new Produto("Difusor Aromático Relaxante", "Difusores Aromáticos", 28.90));
 
         System.out.println("\n()()()--- BEM-VINDO A LOJA VIVELIS ---()()()\n");
 
@@ -50,17 +50,17 @@ public class Main {
 
             if (opcao == 1) {
                 System.out.println("\n*** PRODUTOS ***");
+                System.out.println("(Num - Descrição - Categoria - Valor)");
                 for (int i = 0; i < produtos.size(); i++) {
                     System.out.println(i + " - " + produtos.get(i).nome + " | " + produtos.get(i).categoria + " | R$ " + produtos.get(i).preco);
                 }
-            }
-            else if (opcao == 2) {
+            } else if (opcao == 2) {
                 System.out.println("\n*** CATEGORIAS ***");
-                System.out.println("1 - Perfume");
-                System.out.println("2 - Sabonete");
-                System.out.println("3 - Shampoo");
-                System.out.println("4 - Difusor Aromático");
-                System.out.print("Escolha: ");
+                System.out.println("1 - Perfumes");
+                System.out.println("2 - Sabonetes");
+                System.out.println("3 - Shampoos");
+                System.out.println("4 - Difusores Aromáticos");
+                System.out.print("Escolha uma opção: ");
 
                 int cat = sc.nextInt();
                 String categoria = "";
@@ -78,14 +78,13 @@ public class Main {
                     continue;
                 }
 
-                System.out.println("\n*** PRODUTOS - " + categoria + " ===");
+                System.out.println("\n*** PRODUTOS - " + categoria + " - ***");
                 for (int i = 0; i < produtos.size(); i++) {
                     if (produtos.get(i).categoria.equals(categoria)) {
                         System.out.println(i + " - " + produtos.get(i).nome + " | R$ " + produtos.get(i).preco);
                     }
                 }
-            }
-            else if (opcao == 3) {
+            } else if (opcao == 3) {
                 System.out.print("Número do produto: ");
                 int num = sc.nextInt();
 
@@ -95,8 +94,7 @@ public class Main {
                 } else {
                     System.out.println("Produto inválido!");
                 }
-            }
-            else if (opcao == 4) {
+            } else if (opcao == 4) {
                 System.out.println("\n*** CARRINHO ***");
                 if (carrinho.size() == 0) {
                     System.out.println("Carrinho vazio!");
@@ -115,8 +113,7 @@ public class Main {
                         System.out.println("Falta R$ " + falta + " para frete grátis");
                     }
                 }
-            }
-            else if (opcao == 5) {
+            } else if (opcao == 5) {
                 if (carrinho.size() == 0) {
                     System.out.println("Carrinho vazio!");
                 } else {
@@ -166,18 +163,15 @@ public class Main {
 
                     carrinho.clear();
                 }
-            }
-            else if (opcao == 6) {
+            } else if (opcao == 6) {
                 System.out.println("\n=== SUPORTE ===");
                 System.out.println("Atendimento: 8h às 18h");
                 System.out.println("Email: suportevivelis@vivelis.com");
                 System.out.println("Nosso WhatsApp: (48) 99655-3129");
-            }
-            else if (opcao == 7) {
+            } else if (opcao == 7) {
                 System.out.println("Obrigado por visitar a Vivelis. Volte sempre!");
                 break;
-            }
-            else {
+            } else {
                 System.out.println("Opção inválida!");
             }
         }
