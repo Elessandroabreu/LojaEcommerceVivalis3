@@ -43,7 +43,7 @@ public class Main {
             System.out.println("5 - Comprar");
             System.out.println("6 - Suporte");
             System.out.println("7 - Sair");
-            System.out.print("Opção: ");
+            System.out.print("Opção escolhida: ");
 
             opcao = sc.nextInt();
             sc.nextLine();
@@ -97,7 +97,7 @@ public class Main {
             } else if (opcao == 4) {
                 System.out.println("\n*** CARRINHO ***");
                 if (carrinho.size() == 0) {
-                    System.out.println("Carrinho vazio!");
+                    System.out.println("Carrinho vazio, adicione alguns produtos para continuar!");
                 } else {
                     double total = 0;
                     for (int i = 0; i < carrinho.size(); i++) {
@@ -165,7 +165,7 @@ public class Main {
                 }
             } else if (opcao == 6) {
                 System.out.println("\n=== SUPORTE ===");
-                System.out.println("Atendimento: 8h às 18h");
+                System.out.println("Atendimento: 8h às 18h de segunda a sexta-feira");
                 System.out.println("Email: suportevivelis@vivelis.com");
                 System.out.println("Nosso WhatsApp: (48) 99655-3129");
             } else if (opcao == 7) {
